@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+  <main class="container">
+    <form action="">
+      <div class="container__inputs">
+        <label class="container__inputs__box">
+          DAY
+          <input class="input" id="Bday" placeholder="DD" type="number" min="1" max="31">
+          <span class="info">This field is required</span>
+        </label>
+        <label class="container__inputs__box">
+          MONTH
+          <input class="input" id="Bmonth" placeholder="MM" type="number" min="1" max="12">
+          <span class="info">This field is required</span>
+        </label>
+        <label class="container__inputs__box">
+          YEAR
+          <input class="input" ID="Byear" placeholder="YYYY" type="number" min="1900" max="3000">
+          <span class="info">This field is required</span>
+        </label>
+      </div>
+      <div class="button-box">
+        <button type="button" class="submit-button" id="calculate">
+          <img class="arrow_button" src="./assets/images/icon-arrow.svg" alt="arrow in button">
+        </button>
+      </div>
+      <div class="result-container">
+        <ul class="result-list">
+          <li class="list-item"><span class="number-of" id="years-result">--</span> years</li>
+          <li class="list-item"><span class="number-of" id="months-result">--</span> months</li>
+          <li class="list-item"><span class="number-of" id="days-result">--</span> days</li>
+        </ul>
+      </div>
+    </form>
+  </main>
+  
+</body>
+
+<script src="./script.js"></script>
+
+</html>
